@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - lab3taversion
+name: Build and deploy Python app to Azure Web App - MohamedSouka1190517
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_72366A6380F44A5080B53D427677AC94 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3F37D92D96BB484DB13A238B859BC96A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2AEBEA750CF34703A8A515F4C5157353 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8549CCFE28C648B6AE49950054DC63AB }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_551416A52DE943C7AF5C55ACCAC482A1 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7C4FA78B2F794C4FA7F96A35AD4AB8E3 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'lab3taversion'
+          app-name: 'MohamedSouka1190517'
           slot-name: 'Production'
           
